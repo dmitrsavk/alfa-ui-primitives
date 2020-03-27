@@ -12,8 +12,7 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    
-    - uses: actions/checkout@master
+
     - name: curl
       uses: enflo/curl-action@master
       with:
