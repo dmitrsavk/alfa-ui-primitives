@@ -13,4 +13,6 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     
+    - run: token=${{secrets.PAT_TOKEN}}
+    - run: user=${{secrets.PAT_USERNAME}}
     - run: bash push.sh
